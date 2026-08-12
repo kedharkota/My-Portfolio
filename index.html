@@ -1,0 +1,1846 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark" data-theme="violet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kota Kedharnadh | AI & Data Science Engineer Portfolio</title>
+    
+    <!-- SEO & Metadata -->
+    <meta name="title" content="Kota Kedharnadh | AI & DS Engineer Portfolio">
+    <meta name="description" content="Official Engineering Portfolio of Kota Kedharnadh - B.Tech AI & Data Science Student at Amrita Vishwa Vidyapeetham. Specializing in Quantum Machine Learning (Qiskit VQC), Computer Vision (YOLO), Webots Autonomous Robotics, Deepfake Detection, and IoT Telemetry. IEEE Xplore Published Author.">
+    <meta name="keywords" content="Kota Kedharnadh, AI Engineer, Data Science, Amrita University, Quantum ML, Qiskit, Webots Autonomous Navigation, IEEE Author, YOLO Computer Vision, Deepfake Detection, IoT">
+    <meta name="author" content="Kota Kedharnadh">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/kedharkota">
+    <meta property="og:title" content="Kota Kedharnadh | AI & DS Engineer Portfolio">
+    <meta property="og:description" content="Artificial Intelligence & Data Science Engineer • IEEE Published Author • Quantum ML & Robotics Researcher">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Structured JSON-LD Schema for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Kota Kedharnadh",
+      "jobTitle": "Artificial Intelligence & Data Science Engineer",
+      "worksFor": {
+        "@type": "EducationalOrganization",
+        "name": "Amrita Vishwa Vidyapeetham"
+      },
+      "sameAs": [
+        "https://github.com/kedharkota",
+        "https://www.linkedin.com/in/kedharkota",
+        "https://ieeexplore.ieee.org/document/11089026",
+        "https://ieeexplore.ieee.org/document/11409195"
+      ],
+      "knowsAbout": [
+        "Artificial Intelligence",
+        "Data Science",
+        "Quantum Machine Learning",
+        "Computer Vision",
+        "Autonomous Robotics",
+        "Deepfake Detection",
+        "Webots Simulation",
+        "Qiskit",
+        "YOLO Object Detection",
+        "Internet of Things"
+      ]
+    }
+    </script>
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        theme: {
+                            dark: '#05070f',
+                            card: 'rgba(13, 19, 36, 0.75)',
+                            border: 'rgba(255, 255, 255, 0.08)',
+                            violet: '#8b5cf6',
+                            indigo: '#6366f1',
+                            cyan: '#06b6d4',
+                            emerald: '#10b981',
+                            amber: '#f59e0b',
+                        }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 5s ease-in-out infinite',
+                        'glow': 'glow 3s ease-in-out infinite alternate',
+                        'spin-slow': 'spin 14s linear infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        glow: {
+                            '0%': { filter: 'drop-shadow(0 0 15px rgba(139, 92, 246, 0.3))' },
+                            '100%': { filter: 'drop-shadow(0 0 30px rgba(6, 182, 212, 0.6))' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        :root {
+            --primary-accent: #8b5cf6;
+            --secondary-accent: #06b6d4;
+            --bg-color: #05070f;
+            --card-bg: rgba(13, 19, 36, 0.75);
+            --border-color: rgba(255, 255, 255, 0.08);
+        }
+
+        [data-theme="cyber"] {
+            --primary-accent: #10b981;
+            --secondary-accent: #06b6d4;
+            --bg-color: #040d12;
+            --card-bg: rgba(6, 24, 30, 0.75);
+            --border-color: rgba(16, 185, 129, 0.2);
+        }
+
+        [data-theme="indigo"] {
+            --primary-accent: #6366f1;
+            --secondary-accent: #38bdf8;
+            --bg-color: #080d1a;
+            --card-bg: rgba(15, 23, 42, 0.75);
+            --border-color: rgba(99, 102, 241, 0.2);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: #f3f4f6;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            transition: background-color 0.4s ease, color 0.4s ease;
+        }
+
+        /* Ambient Background Wallpapers */
+        .intro-bg-wallpaper {
+            background-image: 
+                linear-gradient(to bottom, rgba(5, 7, 15, 0.82), rgba(5, 7, 15, 0.94)),
+                url('file:///C:/Users/KEDHAR/.gemini/antigravity/brain/b3b74bf7-9a7a-41b7-9731-90f3c5ff8b34/intro_gate_hero_1786386794523.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .hero-bg-wallpaper {
+            background-image: 
+                linear-gradient(to bottom, rgba(5, 7, 15, 0.88), rgba(5, 7, 15, 0.96)),
+                url('file:///C:/Users/KEDHAR/.gemini/antigravity/brain/b3b74bf7-9a7a-41b7-9731-90f3c5ff8b34/full_portfolio_hero_1786386856013.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .bg-mesh-pattern {
+            background-size: 40px 40px;
+            background-image: 
+                radial-gradient(circle, rgba(139, 92, 246, 0.08) 1px, transparent 1px),
+                linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+        }
+
+        .glass-nav {
+            background: rgba(5, 7, 15, 0.88);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .glass-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--border-color);
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-card:hover {
+            border-color: var(--primary-accent);
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px -15px rgba(139, 92, 246, 0.25);
+        }
+
+        .glow-text {
+            text-shadow: 0 0 30px rgba(139, 92, 246, 0.5);
+        }
+
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: rgba(5, 7, 15, 0.9);
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: var(--primary-accent);
+            border-radius: 9999px;
+        }
+
+        #scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: linear-gradient(to right, var(--primary-accent), var(--secondary-accent), #10b981);
+            z-index: 100;
+            width: 0%;
+            transition: width 0.1s ease-out;
+        }
+
+        .code-block {
+            background: #090d1a;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 1rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            color: #cbd5e1;
+            overflow-x: auto;
+        }
+
+        .fade-in {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="selection:bg-violet-500 selection:text-white custom-scrollbar overflow-x-hidden bg-mesh-pattern relative min-h-screen">
+
+    <!-- Top Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- ========================================== -->
+    <!-- SCREEN 1: PORTAL ENTRANCE SCREEN (INTRO GATE) -->
+    <!-- ========================================== -->
+    <div id="intro-screen" class="fixed inset-0 z-50 intro-bg-wallpaper backdrop-blur-2xl flex items-center justify-center p-4 overflow-y-auto custom-scrollbar">
+        <div class="max-w-2xl w-full glass-card p-8 sm:p-11 rounded-3xl border border-violet-500/30 space-y-7 shadow-2xl relative text-center fade-in my-auto">
+            
+            <div class="flex items-center justify-between pb-4 border-b border-slate-800">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 rounded-xl bg-gradient-to-tr from-violet-600 to-cyan-400 flex items-center justify-center text-slate-950 font-black text-xs">
+                        KK
+                    </div>
+                    <span class="text-xs font-mono text-cyan-400 font-semibold">Kota Kedharnadh Portfolio</span>
+                </div>
+
+                <div class="flex items-center gap-1.5 font-mono text-xs">
+                    <span class="text-[11px] text-slate-400 mr-1 hidden sm:inline">Theme:</span>
+                    <button onclick="setTheme('violet')" class="px-2.5 py-1 rounded-lg bg-violet-500/20 text-violet-300 border border-violet-500/40 font-bold hover:scale-105 transition-transform">Violet</button>
+                    <button onclick="setTheme('cyber')" class="px-2.5 py-1 rounded-lg bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-bold hover:scale-105 transition-transform">Cyber</button>
+                    <button onclick="setTheme('indigo')" class="px-2.5 py-1 rounded-lg bg-indigo-500/20 text-indigo-300 border border-indigo-500/40 font-bold hover:scale-105 transition-transform">Indigo</button>
+                </div>
+            </div>
+
+            <div class="space-y-4 pt-1">
+                <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-slate-900/90 border border-violet-500/40 text-violet-300 text-xs font-mono shadow-lg">
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+                    AI & DS Engineer • Quantum ML & Robotics Researcher
+                </div>
+
+                <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                    Hello, I'm <br class="hidden sm:inline">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 via-cyan-300 to-emerald-400 glow-text">Kota Kedharnadh</span>
+                </h1>
+
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-lg mx-auto">
+                    Undergraduate scholar at <strong class="text-violet-300">Amrita Vishwa Vidyapeetham, Coimbatore</strong> specializing in Machine Learning, Quantum ML (Qiskit VQC), YOLO Computer Vision, Deepfake Detection, and Autonomous Robotics.
+                </p>
+            </div>
+
+            <div class="flex flex-wrap items-center justify-center gap-3">
+                <a href="https://github.com/kedharkota" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-2xl bg-slate-900/90 border border-slate-800 text-slate-300 hover:text-violet-400 text-xs font-mono flex items-center gap-2 transition-all hover:border-violet-500/40">
+                    <i class="fa-brands fa-github text-violet-400 text-sm"></i> github.com/kedharkota
+                </a>
+                <a href="https://www.linkedin.com/in/kedharkota" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-2xl bg-slate-900/90 border border-slate-800 text-slate-300 hover:text-cyan-400 text-xs font-mono flex items-center gap-2 transition-all hover:border-cyan-500/40">
+                    <i class="fa-brands fa-linkedin text-cyan-400 text-sm"></i> linkedin.com/in/kedharkota
+                </a>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-slate-900/90 border border-slate-800 text-xs font-mono text-slate-300 text-left space-y-2">
+                <div class="flex items-center justify-between text-violet-400 font-bold">
+                    <span><i class="fa-solid fa-scroll mr-1.5"></i> IEEE Published Research Author</span>
+                    <span class="text-[10px] text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">Peer-Reviewed</span>
+                </div>
+                <div class="text-slate-400 text-[11px] space-y-1">
+                    <p>• <strong class="text-white">IEEE Doc #11089026:</strong> Webots Autonomous Navigation Algorithms</p>
+                    <p>• <strong class="text-white">IEEE Doc #11409195:</strong> Artificial Intelligence Performance Analysis</p>
+                </div>
+            </div>
+
+            <div class="pt-2">
+                <button onclick="enterPortfolio()" class="w-full py-4.5 rounded-2xl bg-gradient-to-r from-violet-600 via-indigo-600 to-cyan-500 hover:from-violet-500 hover:to-cyan-400 text-slate-950 font-extrabold text-sm tracking-wider uppercase transition-all shadow-xl shadow-violet-500/30 flex items-center justify-center gap-3 group">
+                    <span>Enter Full Portfolio</span>
+                    <i class="fa-solid fa-arrow-right text-base group-hover:translate-x-1.5 transition-transform"></i>
+                </button>
+            </div>
+
+            <p class="text-[11px] text-slate-500 font-mono">Press button to unlock full skills, research, projects & timeline</p>
+        </div>
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- SCREEN 2: MAIN PORTFOLIO WORKSPACE PAGE -->
+    <!-- ========================================== -->
+    <div id="main-portfolio" class="hidden">
+
+        <!-- Navigation Header -->
+        <nav class="fixed top-0 left-0 w-full z-40 glass-nav">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+                
+                <button onclick="returnToIntro()" class="flex items-center gap-3 group text-left" title="Return to Gateway Intro">
+                    <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-violet-600 via-indigo-500 to-cyan-400 flex items-center justify-center text-slate-950 font-black text-xl shadow-lg shadow-violet-500/20 group-hover:scale-105 transition-transform">
+                        KK
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-base font-extrabold tracking-tight text-white group-hover:text-violet-400 transition-colors">Kota Kedharnadh</span>
+                        <span class="text-[11px] text-cyan-400 font-mono flex items-center gap-1.5">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                            AI & DS Engineer • Amrita Univ
+                        </span>
+                    </div>
+                </button>
+
+                <div class="hidden lg:flex items-center gap-6 text-sm font-medium text-slate-300">
+                    <button onclick="returnToIntro()" class="hover:text-violet-400 transition-colors flex items-center gap-1">
+                        <i class="fa-solid fa-house text-xs text-violet-400"></i> Gateway
+                    </button>
+                    <a href="#about" class="hover:text-violet-400 transition-colors flex items-center gap-1.5">
+                        <span class="text-xs text-violet-400 font-mono">01.</span> About
+                    </a>
+                    <a href="#skills" class="hover:text-violet-400 transition-colors flex items-center gap-1.5">
+                        <span class="text-xs text-cyan-400 font-mono">02.</span> Skills
+                    </a>
+                    <a href="#projects" class="hover:text-violet-400 transition-colors flex items-center gap-1.5">
+                        <span class="text-xs text-emerald-400 font-mono">03.</span> Projects
+                    </a>
+                    <a href="#research" class="hover:text-violet-400 transition-colors flex items-center gap-1.5">
+                        <span class="text-xs text-amber-400 font-mono">04.</span> Research
+                    </a>
+                    <a href="#education" class="hover:text-violet-400 transition-colors flex items-center gap-1.5">
+                        <span class="text-xs text-indigo-400 font-mono">05.</span> Education
+                    </a>
+                    <a href="#contact" class="hover:text-violet-400 transition-colors">Contact</a>
+                </div>
+
+                <div class="hidden md:flex items-center gap-3">
+                    <div class="flex items-center gap-1 p-1 rounded-xl bg-slate-900 border border-slate-800 font-mono text-[11px]">
+                        <button onclick="setTheme('violet')" class="px-2 py-0.5 rounded text-violet-300 font-bold hover:bg-violet-500/20">V</button>
+                        <button onclick="setTheme('cyber')" class="px-2 py-0.5 rounded text-emerald-300 font-bold hover:bg-emerald-500/20">C</button>
+                        <button onclick="setTheme('indigo')" class="px-2 py-0.5 rounded text-indigo-300 font-bold hover:bg-indigo-500/20">I</button>
+                    </div>
+
+                    <a href="https://github.com/kedharkota" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-slate-900/90 hover:bg-slate-800 border border-slate-800 text-slate-300 hover:text-white transition-all hover:scale-105 flex items-center gap-2 text-xs font-mono" title="GitHub Profile">
+                        <i class="fa-brands fa-github text-base text-violet-400"></i>
+                        <span class="hidden xl:inline">GitHub</span>
+                    </a>
+                    <a href="#contact" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-violet-600 via-indigo-600 to-cyan-500 hover:from-violet-500 hover:to-cyan-400 text-slate-950 font-extrabold text-xs transition-all shadow-lg shadow-violet-500/25 flex items-center gap-2">
+                        <i class="fa-solid fa-paper-plane"></i> Hire Me
+                    </a>
+                </div>
+
+                <button onclick="toggleMobileMenu()" class="lg:hidden p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white" aria-label="Toggle Navigation">
+                    <i class="fa-solid fa-bars-staggered text-xl" id="menu-icon"></i>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="hidden lg:hidden glass-nav border-b border-slate-800 px-6 py-6 space-y-4 shadow-2xl">
+                <button onclick="returnToIntro(); toggleMobileMenu();" class="block w-full text-left text-violet-400 font-semibold text-sm">
+                    <i class="fa-solid fa-arrow-left mr-2"></i> Return to Gateway Intro
+                </button>
+                <a href="#about" onclick="toggleMobileMenu()" class="block text-slate-300 hover:text-violet-400 font-semibold text-sm">01. About Me</a>
+                <a href="#skills" onclick="toggleMobileMenu()" class="block text-slate-300 hover:text-violet-400 font-semibold text-sm">02. Skills & Tech Stack</a>
+                <a href="#projects" onclick="toggleMobileMenu()" class="block text-slate-300 hover:text-violet-400 font-semibold text-sm">03. Engineering Projects</a>
+                <a href="#research" onclick="toggleMobileMenu()" class="block text-slate-300 hover:text-violet-400 font-semibold text-sm">04. IEEE Publications</a>
+                <a href="#education" onclick="toggleMobileMenu()" class="block text-slate-300 hover:text-violet-400 font-semibold text-sm">05. Education & Background</a>
+                <a href="#contact" onclick="toggleMobileMenu()" class="block text-slate-300 hover:text-violet-400 font-semibold text-sm">06. Contact Info</a>
+            </div>
+        </nav>
+
+        <!-- HERO SECTION -->
+        <section id="hero" class="relative min-h-screen pt-36 pb-20 flex items-center justify-center hero-bg-wallpaper overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+                <div class="grid lg:grid-cols-12 gap-12 items-center">
+                    
+                    <div class="lg:col-span-7 space-y-7 text-center lg:text-left">
+                        <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-slate-900/90 border border-violet-500/30 text-violet-300 text-xs font-mono tracking-wide uppercase shadow-lg shadow-violet-500/10">
+                            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+                            AI & DS Engineer • Quantum ML & Robotics Researcher
+                        </div>
+
+                        <h1 class="text-4xl sm:text-6xl xl:text-7xl font-extrabold text-white tracking-tight leading-[1.1]">
+                            Kota Kedharnadh <br class="hidden sm:inline">
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 via-cyan-300 to-emerald-400 glow-text">
+                                Artificial Intelligence
+                            </span> <br>
+                            & Data Science
+                        </h1>
+
+                        <p class="text-base sm:text-lg text-slate-300 font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                            Undergraduate scholar at <strong class="text-violet-300">Amrita Vishwa Vidyapeetham</strong> specializing in <strong class="text-cyan-300">Machine Learning</strong>, <strong class="text-emerald-300">Quantum ML (Qiskit VQC)</strong>, <strong class="text-amber-300">YOLO Computer Vision</strong>, and autonomous robotics.
+                        </p>
+
+                        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3">
+                            <a href="https://github.com/kedharkota" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-2xl bg-slate-900/90 hover:bg-slate-800 border border-slate-700/80 text-slate-200 hover:text-white text-xs font-mono transition-all flex items-center gap-2.5 group shadow-md hover:border-violet-500/50">
+                                <i class="fa-brands fa-github text-base text-violet-400 group-hover:scale-110 transition-transform"></i>
+                                <span>github.com/kedharkota</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-slate-500"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/kedharkota" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-2xl bg-slate-900/90 hover:bg-slate-800 border border-slate-700/80 text-slate-200 hover:text-white text-xs font-mono transition-all flex items-center gap-2.5 group shadow-md hover:border-cyan-500/50">
+                                <i class="fa-brands fa-linkedin text-base text-cyan-400 group-hover:scale-110 transition-transform"></i>
+                                <span>linkedin.com/in/kedharkota</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-slate-500"></i>
+                            </a>
+                        </div>
+
+                        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+                            <button onclick="openAboutModal()" class="px-7 py-3.5 rounded-2xl bg-gradient-to-r from-violet-600 via-indigo-600 to-cyan-500 hover:from-violet-500 hover:to-cyan-400 text-slate-950 font-extrabold text-sm tracking-wide transition-all shadow-xl shadow-violet-500/25 flex items-center gap-2.5">
+                                <i class="fa-solid fa-circle-user text-base"></i> Quick Profile Card
+                            </button>
+                            <a href="#projects" class="px-6 py-3.5 rounded-2xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-white font-semibold text-sm transition-all flex items-center gap-2">
+                                View GitHub Repositories <i class="fa-solid fa-arrow-down text-xs text-violet-400"></i>
+                            </a>
+                            <button onclick="copyContactSummary()" class="px-4 py-3.5 rounded-2xl bg-slate-900/80 hover:bg-slate-800 border border-slate-800 text-slate-300 hover:text-white transition-all text-xs font-mono flex items-center gap-2" title="Copy profile summary card">
+                                <i class="fa-regular fa-copy text-cyan-400"></i> Copy Summary
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Developer Terminal Widget -->
+                    <div class="lg:col-span-5">
+                        <div class="glass-card rounded-3xl border border-slate-800 overflow-hidden shadow-2xl relative">
+                            <div class="bg-slate-900/90 px-4 py-3 border-b border-slate-800 flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></span>
+                                    <span class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block"></span>
+                                    <span class="w-3 h-3 rounded-full bg-emerald-500/80 inline-block"></span>
+                                </div>
+                                <span class="text-xs font-mono text-slate-400 flex items-center gap-2">
+                                    <i class="fa-solid fa-terminal text-violet-400"></i> kedharkota@amrita-aids:~
+                                </span>
+                                <span class="text-[10px] font-mono text-emerald-400 px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/20">v2.5</span>
+                            </div>
+
+                            <div class="p-5 font-mono text-xs text-slate-300 space-y-3 min-h-[320px] max-h-[360px] overflow-y-auto custom-scrollbar" id="terminal-body">
+                                <p class="text-slate-500">// Kota Kedharnadh - Developer Console</p>
+                                <p class="text-slate-400">Click quick command triggers to inspect background details:</p>
+                                
+                                <div id="terminal-output" class="space-y-3 pt-2">
+                                    <div class="text-violet-400">$ kedharkota --whoami</div>
+                                    <div class="text-slate-300 pl-3 border-l-2 border-violet-500/50 space-y-1.5">
+                                        <p>• <strong class="text-white">Name:</strong> Kota Kedharnadh</p>
+                                        <p>• <strong class="text-white">Degree:</strong> B.Tech AI & Data Science (2023 - Present)</p>
+                                        <p>• <strong class="text-white">University:</strong> Amrita Vishwa Vidyapeetham, Coimbatore</p>
+                                        <p>• <strong class="text-white">Academic CGPA:</strong> 6.6</p>
+                                        <p>• <strong class="text-white">Research:</strong> IEEE Webots Autonomous Navigation Author</p>
+                                        <p>• <strong class="text-white">GitHub:</strong> <a href="https://github.com/kedharkota" target="_blank" class="text-violet-400 underline">https://github.com/kedharkota</a></p>
+                                        <p>• <strong class="text-white">LinkedIn:</strong> <a href="https://www.linkedin.com/in/kedharkota" target="_blank" class="text-cyan-400 underline">https://www.linkedin.com/in/kedharkota</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-slate-900/90 p-3 border-t border-slate-800 flex flex-wrap gap-2 text-xs font-mono">
+                                <button onclick="runTerminalCommand('about')" class="px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-violet-500 hover:text-slate-950 text-slate-300 transition-colors">cat about.md</button>
+                                <button onclick="runTerminalCommand('skills')" class="px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 text-slate-300 transition-colors">cat skills.json</button>
+                                <button onclick="runTerminalCommand('projects')" class="px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-emerald-500 hover:text-slate-950 text-slate-300 transition-colors">ls projects/</button>
+                                <button onclick="runTerminalCommand('research')" class="px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-slate-300 transition-colors">cat ieee_papers.txt</button>
+                                <button onclick="runTerminalCommand('contact')" class="px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-pink-500 hover:text-slate-950 text-slate-300 transition-colors">cat contact.txt</button>
+                                <button onclick="runTerminalCommand('clear')" class="px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-red-500 hover:text-white text-slate-400 transition-colors ml-auto">clear</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="py-28 relative bg-slate-950/80 border-t border-b border-slate-800/80">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-violet-500/10 border border-violet-500/30 text-violet-400 text-xs font-mono font-bold tracking-widest uppercase">
+                        <i class="fa-solid fa-user-gear"></i> Direct Profile
+                    </div>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+                        About Kota Kedharnadh
+                    </h2>
+                    <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+                        Undergraduate AI & DS Engineer bridging algorithmic machine learning with physical robotics, quantum computing, and embedded telemetry.
+                    </p>
+                </div>
+
+                <div class="grid lg:grid-cols-12 gap-10 items-stretch">
+                    
+                    <div class="lg:col-span-8 glass-card rounded-3xl p-6 sm:p-10 space-y-6 border border-slate-800 flex flex-col justify-between">
+                        <div>
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-6 border-b border-slate-800 gap-4">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-12 h-12 rounded-2xl bg-violet-500/20 text-violet-400 flex items-center justify-center text-xl font-black">
+                                        <i class="fa-solid fa-id-card"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-2xl font-bold text-white">Engineering Background</h3>
+                                        <p class="text-xs text-slate-400 font-mono">B.Tech AI & Data Science • Amrita Univ, Coimbatore</p>
+                                    </div>
+                                </div>
+
+                                <span class="text-xs font-mono text-emerald-400 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 w-fit">
+                                    <i class="fa-solid fa-check-circle mr-1"></i> Published IEEE Author
+                                </span>
+                            </div>
+
+                            <div class="flex flex-wrap gap-2 pt-6 pb-2 border-b border-slate-800/60 font-mono text-xs">
+                                <button onclick="switchAboutTab('overview')" id="tab-btn-overview" class="about-tab-btn px-4 py-2 rounded-xl bg-violet-600 text-white font-bold transition-all">Overview</button>
+                                <button onclick="switchAboutTab('domains')" id="tab-btn-domains" class="about-tab-btn px-4 py-2 rounded-xl text-slate-400 hover:text-white transition-all">Core Focus</button>
+                                <button onclick="switchAboutTab('research')" id="tab-btn-research" class="about-tab-btn px-4 py-2 rounded-xl text-slate-400 hover:text-white transition-all">Research & Vision</button>
+                                <button onclick="switchAboutTab('personal')" id="tab-btn-personal" class="about-tab-btn px-4 py-2 rounded-xl text-slate-400 hover:text-white transition-all">Personal Details</button>
+                            </div>
+
+                            <div id="about-tab-overview" class="about-tab-content space-y-4 pt-6 text-slate-300 text-sm sm:text-base leading-relaxed">
+                                <p>
+                                    I am an <strong class="text-white">Artificial Intelligence & Data Science (AI & DS)</strong> scholar at <strong class="text-white">Amrita Vishwa Vidyapeetham, Coimbatore</strong> (2023 - Present). My goal is to build intelligent physical and cloud systems that solve real human safety, agriculture, and healthcare challenges.
+                                </p>
+                                <p>
+                                    My engineering work ranges from constructing subterranean <strong class="text-violet-300">Coal Mine Threat Detection Rovers</strong> using <strong class="text-cyan-300">YOLO vision models</strong>, Raspberry Pi, and gas telemetry, to evaluating <strong class="text-emerald-300">Variational Quantum Circuits (Qiskit VQC)</strong> for medical diagnostic predictions.
+                                </p>
+                                <p>
+                                    I have published peer-reviewed research on <strong class="text-amber-300">Webots Autonomous Navigation</strong> in IEEE Xplore, showcasing my passion for combining simulation environment testing with practical robotics execution.
+                                </p>
+                            </div>
+
+                            <div id="about-tab-domains" class="about-tab-content hidden space-y-4 pt-6 text-slate-300 text-sm sm:text-base leading-relaxed">
+                                <p class="text-slate-200 font-semibold">Core Specialization Domains:</p>
+                                <div class="grid sm:grid-cols-2 gap-4 text-xs font-mono">
+                                    <div class="p-4 rounded-2xl bg-slate-900/90 border border-slate-800 space-y-1.5">
+                                        <span class="text-violet-400 font-bold"><i class="fa-solid fa-brain mr-1.5"></i> Computer Vision & ML</span>
+                                        <p class="text-slate-400">YOLO v8/v9, OpenCV processing, Scikit-Learn, PyTorch fundamentals, custom object detection, image segmentation.</p>
+                                    </div>
+                                    <div class="p-4 rounded-2xl bg-slate-900/90 border border-slate-800 space-y-1.5">
+                                        <span class="text-cyan-400 font-bold"><i class="fa-solid fa-atom mr-1.5"></i> Quantum Computing</span>
+                                        <p class="text-slate-400">Qiskit VQC circuits, quantum encodings (Amplitude, Angle, Basis, IQP), variational quantum classification, ansatz optimization.</p>
+                                    </div>
+                                    <div class="p-4 rounded-2xl bg-slate-900/90 border border-slate-800 space-y-1.5">
+                                        <span class="text-emerald-400 font-bold"><i class="fa-solid fa-microchip mr-1.5"></i> Embedded & IoT</span>
+                                        <p class="text-slate-400">ESP32, Raspberry Pi 4, Arduino, Methane (MQ-4) & CO2 gas sensors, soil moisture telemetry, Flask REST APIs.</p>
+                                    </div>
+                                    <div class="p-4 rounded-2xl bg-slate-900/90 border border-slate-800 space-y-1.5">
+                                        <span class="text-amber-400 font-bold"><i class="fa-solid fa-robot mr-1.5"></i> Autonomous Navigation</span>
+                                        <p class="text-slate-400">Webots robotics simulation, sweep coverage algorithms, obstacle avoidance, LiDAR point clouds, ROS fundamentals.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="about-tab-research" class="about-tab-content hidden space-y-4 pt-6 text-slate-300 text-sm sm:text-base leading-relaxed">
+                                <p>
+                                    <strong class="text-white">Research Focus:</strong> Simulation-first robotics testing and hybrid quantum-classical algorithms.
+                                </p>
+                                <p>
+                                    In my published IEEE paper on Webots autonomous navigation, I analyzed sweep coverage and obstacle detection performance under simulated real-world conditions. My current research explores how Quantum Machine Learning can improve multi-dimensional diagnostic classification while maintaining minimal circuit depth.
+                                </p>
+                            </div>
+
+                            <div id="about-tab-personal" class="about-tab-content hidden space-y-4 pt-6 text-slate-300 text-sm sm:text-base leading-relaxed">
+                                <div class="grid sm:grid-cols-2 gap-3 text-xs font-mono">
+                                    <div class="flex justify-between py-2 border-b border-slate-800">
+                                        <span class="text-slate-400">Full Name:</span>
+                                        <span class="text-white font-bold">Kota Kedharnadh</span>
+                                    </div>
+                                    <div class="flex justify-between py-2 border-b border-slate-800">
+                                        <span class="text-slate-400">Current Status:</span>
+                                        <span class="text-emerald-400 font-bold">B.Tech Student (AI & DS)</span>
+                                    </div>
+                                    <div class="flex justify-between py-2 border-b border-slate-800">
+                                        <span class="text-slate-400">Location:</span>
+                                        <span class="text-white">Coimbatore / Guntur</span>
+                                    </div>
+                                    <div class="flex justify-between py-2 border-b border-slate-800">
+                                        <span class="text-slate-400">Languages:</span>
+                                        <span class="text-white">English, Telugu, Hindi</span>
+                                    </div>
+                                    <div class="flex justify-between py-2 border-b border-slate-800">
+                                        <span class="text-slate-400">GitHub:</span>
+                                        <a href="https://github.com/kedharkota" target="_blank" class="text-violet-400 underline">github.com/kedharkota</a>
+                                    </div>
+                                    <div class="flex justify-between py-2 border-b border-slate-800">
+                                        <span class="text-slate-400">LinkedIn:</span>
+                                        <a href="https://www.linkedin.com/in/kedharkota" target="_blank" class="text-cyan-400 underline">linkedin.com/in/kedharkota</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-6 border-t border-slate-800 flex flex-wrap items-center justify-between gap-4">
+                            <div class="flex items-center gap-3">
+                                <a href="https://github.com/kedharkota" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl bg-slate-900 border border-slate-800 text-violet-400 text-xs font-mono font-bold flex items-center gap-2 hover:bg-slate-800 transition-colors">
+                                    <i class="fa-brands fa-github text-sm"></i> kedharkota
+                                </a>
+                                <a href="https://www.linkedin.com/in/kedharkota" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl bg-slate-900 border border-slate-800 text-cyan-400 text-xs font-mono font-bold flex items-center gap-2 hover:bg-slate-800 transition-colors">
+                                    <i class="fa-brands fa-linkedin text-sm"></i> kedharkota
+                                </a>
+                            </div>
+                            
+                            <a href="#contact" class="px-5 py-2 rounded-xl bg-violet-600 hover:bg-violet-500 text-white font-bold text-xs transition-colors">
+                                Contact Directly <i class="fa-solid fa-chevron-right text-[10px] ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-4 flex flex-col gap-6">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="p-5 rounded-3xl glass-card space-y-2 border border-slate-800">
+                                <div class="text-xs font-mono text-violet-400 font-semibold uppercase">Degree Program</div>
+                                <div class="text-lg font-extrabold text-white">B.Tech AI & DS</div>
+                                <p class="text-[11px] text-slate-400">Amrita Univ • 2023–27</p>
+                            </div>
+                            <div class="p-5 rounded-3xl glass-card space-y-2 border border-slate-800">
+                                <div class="text-xs font-mono text-cyan-400 font-semibold uppercase">Academic CGPA</div>
+                                <div class="text-2xl font-extrabold text-white">6.6</div>
+                                <p class="text-[11px] text-slate-400">Coimbatore Campus</p>
+                            </div>
+                            <div class="p-5 rounded-3xl glass-card space-y-2 border border-slate-800">
+                                <div class="text-xs font-mono text-emerald-400 font-semibold uppercase">Research Output</div>
+                                <div class="text-lg font-extrabold text-white">IEEE Author</div>
+                                <p class="text-[11px] text-slate-400">Webots Navigation</p>
+                            </div>
+                            <div class="p-5 rounded-3xl glass-card space-y-2 border border-slate-800">
+                                <div class="text-xs font-mono text-amber-400 font-semibold uppercase">Hardware & AI</div>
+                                <div class="text-2xl font-extrabold text-white">8+ Repos</div>
+                                <p class="text-[11px] text-slate-400">YOLO, Deepfake, Qiskit</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card rounded-3xl p-6 sm:p-7 space-y-4 border border-slate-800 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h4 class="text-base font-bold text-white mb-3 border-b border-slate-800 pb-3 flex items-center justify-between">
+                                    <span>Official Digital Profiles</span>
+                                    <i class="fa-solid fa-shield-halved text-violet-400"></i>
+                                </h4>
+
+                                <div class="space-y-3 text-xs font-mono">
+                                    <a href="https://github.com/kedharkota" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-3 rounded-2xl bg-slate-900/90 border border-slate-800 hover:border-violet-500/50 text-slate-300 hover:text-white transition-all group">
+                                        <div class="flex items-center gap-2.5">
+                                            <i class="fa-brands fa-github text-lg text-violet-400 group-hover:scale-110 transition-transform"></i>
+                                            <div>
+                                                <p class="font-bold">GitHub Repository</p>
+                                                <p class="text-[11px] text-slate-400">github.com/kedharkota</p>
+                                            </div>
+                                        </div>
+                                        <i class="fa-solid fa-external-link text-slate-500 text-xs"></i>
+                                    </a>
+
+                                    <a href="https://www.linkedin.com/in/kedharkota" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-3 rounded-2xl bg-slate-900/90 border border-slate-800 hover:border-cyan-500/50 text-slate-300 hover:text-white transition-all group">
+                                        <div class="flex items-center gap-2.5">
+                                            <i class="fa-brands fa-linkedin text-lg text-cyan-400 group-hover:scale-110 transition-transform"></i>
+                                            <div>
+                                                <p class="font-bold">LinkedIn Network</p>
+                                                <p class="text-[11px] text-slate-400">linkedin.com/in/kedharkota</p>
+                                            </div>
+                                        </div>
+                                        <i class="fa-solid fa-external-link text-slate-500 text-xs"></i>
+                                    </a>
+
+                                    <a href="https://wa.me/919030677603" target="_blank" class="flex items-center justify-between p-3 rounded-2xl bg-slate-900/90 border border-slate-800 hover:border-emerald-500/50 text-slate-300 hover:text-white transition-all group">
+                                        <div class="flex items-center gap-2.5">
+                                            <i class="fa-brands fa-whatsapp text-lg text-emerald-400 group-hover:scale-110 transition-transform"></i>
+                                            <div>
+                                                <p class="font-bold">WhatsApp Direct</p>
+                                                <p class="text-[11px] text-slate-400">+91 9030677603</p>
+                                            </div>
+                                        </div>
+                                        <i class="fa-solid fa-external-link text-slate-500 text-xs"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="pt-2">
+                                <a href="mailto:kedharkota@gmail.com" class="w-full block text-center py-3 rounded-2xl bg-gradient-to-r from-violet-600 to-cyan-500 hover:from-violet-500 hover:to-cyan-400 text-slate-950 font-extrabold text-xs transition-all shadow-md">
+                                    <i class="fa-solid fa-envelope mr-2"></i> kedharkota@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="py-28 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-mono font-bold tracking-widest uppercase">
+                        <i class="fa-solid fa-layer-group"></i> Tech Stack & Capability
+                    </div>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">Technical Arsenal</h2>
+                    <p class="text-slate-400 text-sm sm:text-base">Comprehensive skill breakdown across Machine Learning, Robotics, Quantum circuits, and Cloud Backends.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    
+                    <div class="glass-card rounded-3xl p-6 space-y-4 border border-slate-800">
+                        <div class="w-12 h-12 rounded-2xl bg-violet-500/10 text-violet-400 flex items-center justify-center text-2xl">
+                            <i class="fa-solid fa-atom"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Quantum & ML</h3>
+                        <ul class="space-y-2.5 text-xs font-mono text-slate-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-violet-400"></i> Python & NumPy / Pandas</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-violet-400"></i> Qiskit (VQC Circuits)</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-violet-400"></i> Scikit-Learn & XGBoost</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-violet-400"></i> RNN & LSTM Networks</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-violet-400"></i> Quantum Encodings</li>
+                        </ul>
+                    </div>
+
+                    <div class="glass-card rounded-3xl p-6 space-y-4 border border-slate-800">
+                        <div class="w-12 h-12 rounded-2xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-2xl">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Robotics & Vision</h3>
+                        <ul class="space-y-2.5 text-xs font-mono text-slate-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-cyan-400"></i> YOLO Object Detection</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-cyan-400"></i> Webots Simulator</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-cyan-400"></i> Raspberry Pi 4 Systems</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-cyan-400"></i> OpenCV Image Processing</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-cyan-400"></i> Path Planning Algorithms</li>
+                        </ul>
+                    </div>
+
+                    <div class="glass-card rounded-3xl p-6 space-y-4 border border-slate-800">
+                        <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">IoT & Hardware</h3>
+                        <ul class="space-y-2.5 text-xs font-mono text-slate-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-emerald-400"></i> ESP32 Microcontrollers</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-emerald-400"></i> Arduino C++ Microcontroller</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-emerald-400"></i> Methane (MQ-4) & CO2 Sensors</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-emerald-400"></i> Soil Telemetry Hardware</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-emerald-400"></i> Serial & Wi-Fi Comms</li>
+                        </ul>
+                    </div>
+
+                    <div class="glass-card rounded-3xl p-6 space-y-4 border border-slate-800">
+                        <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-2xl">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Web & Frameworks</h3>
+                        <ul class="space-y-2.5 text-xs font-mono text-slate-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-amber-400"></i> Flask Python REST APIs</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-amber-400"></i> React & Tailwind CSS</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-amber-400"></i> Git & GitHub Versioning</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-amber-400"></i> MATLAB Simulation</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-amber-400"></i> Big Data & Hadoop Concepts</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS & GITHUB REPOSITORIES SECTION -->
+        <section id="projects" class="py-28 relative bg-slate-950/70 border-t border-b border-slate-800/80">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono font-bold tracking-widest uppercase mb-2">
+                            <i class="fa-solid fa-diagram-project"></i> GitHub Repositories & Projects
+                        </div>
+                        <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">Engineering Projects & Code</h2>
+                        <p class="text-slate-400 text-sm mt-2">All public GitHub repositories with direct links to view source code.</p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2 bg-slate-900/90 p-1.5 rounded-2xl border border-slate-800 text-xs font-mono">
+                        <button onclick="filterProjects('all')" class="project-filter-btn px-4 py-2 rounded-xl bg-violet-600 text-white font-bold transition-all" data-filter="all">All Repos</button>
+                        <button onclick="filterProjects('quantum')" class="project-filter-btn px-4 py-2 rounded-xl text-slate-400 hover:text-white transition-all" data-filter="quantum">Quantum ML</button>
+                        <button onclick="filterProjects('robotics')" class="project-filter-btn px-4 py-2 rounded-xl text-slate-400 hover:text-white transition-all" data-filter="robotics">Robotics & CV</button>
+                        <button onclick="filterProjects('ai')" class="project-filter-btn px-4 py-2 rounded-xl text-slate-400 hover:text-white transition-all" data-filter="ai">AI & NLP</button>
+                        <button onclick="filterProjects('iot')" class="project-filter-btn px-4 py-2 rounded-xl text-slate-400 hover:text-white transition-all" data-filter="iot">IoT & Web</button>
+                    </div>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+                    
+                    <!-- Repo 1: AI Deepfake Detection -->
+                    <div class="project-card glass-card rounded-3xl p-6 flex flex-col justify-between group border border-slate-800" data-category="robotics">
+                        <div>
+                            <div class="p-5 rounded-2xl bg-slate-900/90 border border-violet-500/20 mb-5 relative overflow-hidden space-y-3">
+                                <div class="flex items-center justify-between">
+                                    <div class="w-10 h-10 rounded-xl bg-violet-500/20 text-violet-400 flex items-center justify-center text-xl font-bold">
+                                        <i class="fa-solid fa-user-shield"></i>
+                                    </div>
+                                    <span class="text-[10px] font-mono text-violet-300 px-2.5 py-1 rounded bg-violet-500/10 border border-violet-500/20">
+                                        ResNet + LSTM
+                                    </span>
+                                </div>
+                                <div class="code-block text-[11px] text-violet-300">
+                                    <code>model = ResNetLSTM(num_classes=2)<br>loss = criterion(model(frame_sequence), labels)</code>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="px-3 py-1 rounded-full bg-violet-500/10 text-violet-400 border border-violet-500/20 text-xs font-mono font-bold">
+                                    AI & Computer Vision
+                                </span>
+                                <a href="https://github.com/kedharkota/AI-deep-fake-detection" target="_blank" rel="noopener noreferrer" class="text-violet-400 hover:text-white p-1" title="Open GitHub Repo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                                </a>
+                            </div>
+
+                            <h3 class="text-xl font-bold text-white group-hover:text-violet-400 transition-colors">
+                                AI Deepfake Detection System
+                            </h3>
+
+                            <p class="text-slate-300 text-xs sm:text-sm mt-3 leading-relaxed">
+                                Advanced deep learning pipeline using ResNet spatial feature extraction combined with LSTM temporal sequence analysis to detect synthetic video manipulation and facial deepfakes.
+                            </p>
+
+                            <div class="flex flex-wrap gap-2 mt-4 pt-3 border-t border-slate-800">
+                                <span class="px-2.5 py-0.5 rounded-lg bg-slate-900 text-[11px] font-mono text-slate-300 border border-slate-800">ResNet</span>
+                                <span class="px-2.5 py-0.5 rounded-lg bg-slate-900 text-[11px] font-mono text-slate-300 border border-slate-800">LSTM</span>
+                                <span class="px-2.5 py-0.5 rounded-lg bg-slate-900 text-[11px] font-mono text-slate-300 border border-slate-800">Computer Vision</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 flex gap-2">
+                            <a href="https://github.com/kedharkota/AI-deep-fake-detection" target="_blank" rel="noopener noreferrer" class="flex-1 py-2.5 rounded-xl bg-violet-600 hover:bg-violet-500 text-white text-xs font-bold transition-all flex items-center justify-center gap-2">
+                                <i class="fa-brands fa-github text-sm"></i> Open GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Repo 2: Gesture Controlled Drone -->
+                    <div class="project-card glass-card rounded-3xl p-6 flex flex-col justify-between group border border-slate-800" data-category="robotics">
+                        <div>
+                            <div class="p-5 rounded-2xl bg-slate-900/90 border border-amber-500/20 mb-5 relative overflow-hidden space-y-3">
+                                <div class="flex items-center justify-between">
+                                    <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-xl font-bold">
+                                        <i class="fa-solid fa-hand"></i>
+                                    </div>
+                                    <span class="text-[10px] font-mono text-amber-400 px-2.5 py-1 rounded bg-amber-500/10 border border-amber-500/20">
+                                        OpenCV + MediaPipe
+                                    </span>
+                                </div>
+                                <div class="code-block text-[11px] text-amber-300">
+                                    <code>hands = mp_hands.Hands(max_num_hands=1)<br>send_flight_command(gesture_id)</code>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20 text-xs font-mono font-bold">
+                                    Robotics & CV
+                                </span>
+                                <a href="https://github.com/kedharkota/Gesture-Controlled-Drone-" target="_blank" rel="noopener noreferrer" class="text-amber-400 hover:text-white p-1" title="Open GitHub Repo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                                </a>
+                            </div>
+
+                            <h3 class="text-xl font-bold text-white group-hover:text-amber-400 transition-colors">
+                                Gesture-Controlled Autonomous Drone
+                            </h3>
+
+                            <p class="text-slate-300 text-xs sm:text-sm mt-3 leading-relaxed">
+                                Real-time computer vision system mapping human hand gestures to flight control commands (takeoff, pitch, roll, land) for autonomous drone navigation.
+                            </p>
+
+                            <div class="flex flex-wrap gap-2 mt-4 pt-3 border-t border-slate-800">
+                                <span class="px-2.5 py-0.5 rounded-lg bg-slate-900 text-[11px] font-mono text-slate-300 border border-slate-800">OpenCV</span>
+                                <span class="px-2.5 py-0.5 rounded-lg bg-slate-900 text-[11px] font-mono text-slate-300 border border-slate-800">MediaPipe</span>
+                                <span class="px-2.5 py-0.5 rounded-lg bg-slate-900 text-[11px] font-mono text-slate-300 border border-slate-800">Drone Flight</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 flex gap-2">
+                            <a href="https://github.com/kedharkota/Gesture-Controlled-Drone-" target="_blank" rel="noopener noreferrer" class="flex-1 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-bold transition-all flex items-center justify-center gap-2">
+                                <i class="fa-brands fa-github text-sm"></i> Open GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Repo 3: Healthcare Recommendation System -->
+                    <div class="project-card glass-card rounded-3xl p-6 flex flex-col justify-between group border border-slate-800" data-category="ai">
+                        <div>
+                            <div class="p-5 rounded-2xl bg-slate-900/90 border border-cyan-500/20 mb-5 relative overflow-hidden space-y-3">
+                                <div class="flex items-center justify-between">
+                                    <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-xl font-bold">
+                                        <i class="fa-solid fa-heart-pulse"></i>
+                                    </div>
+                                    <span class="text-[10px] font-mono text-cyan-400 px-2.5 py-1 rounded bg-cyan-500/10 border border-cyan-500/20">
+                                        ML Recommendation
+                                    </span>
+                                </div>
+                                <div class="code-block text-[11px] text-cyan-300">
+                                    <code>predicted_disease = rf_model.predict(symptoms)<br>recommend_meds(predicted_disease)</code>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 text-xs font-mono font-bold">
+                                    Healthcare & ML
+                                </span>
+                                <a href="https://github.com/kedharkota/Healthcare-Recommendation-System" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:text-white p-1" title="Open GitHub Repo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                                </a>
+                            </div>
+
+                            <h3 class="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+                                Healthcare Recommendation System
+                            </h3>
+
+                            <p class="text-slate-300 text-xs sm:text-sm mt-3 leading-relaxed">
+                                Intelligent medical diagnostic assistant recommending treatment plans, precautions, and specialist referrals based on symptom input vectors using supervised ML models.
+                            </p>
+
+                            <div class="flex flex-wrap gap-2 mt-4 pt-3 border-t border-slate-800">
+                                <span class="px-2.5 py-0.5 rounded-lg bg-slate-900 text-[11px] font-mono text-slate-300 border border-slate-800">Python</span>
+                                <span class="px-2.5 py-0.5 rounded-lg bg-slate-900 text-[11px] font-mono text-slate-300 border border-slate-800">Scikit-Learn</span>
+                                <span class="px-2.5 py-0.5 rounded-lg bg-slate-900 text-[11px] font-mono text-slate-300 border border-slate-800">Jupyter</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 flex gap-2">
+                            <a href="https://github.com/kedharkota/Healthcare-Recommendation-System" target="_blank" rel="noopener noreferrer" class="flex-1 py-2.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 text-xs font-bold transition-all flex items-center justify-center gap-2">
+                                <i class="fa-brands fa-github text-sm"></i> Open GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Repo 4: Quantum Encoding Diagnostics -->
+                    <div class="project-card glass-card rounded-3xl p-6 flex flex-col justify-between group border border-slate-800" data-category="quantum">
+                        <div>
+                            <div class="p-5 rounded-2xl bg-slate-900/90 border border-violet-500/20 mb-5 relative overflow-hidden space-y-3">
+                                <div class="flex items-center justify-between">
+                                    <div class="w-10 h-10 rounded-xl bg-violet-500/20 text-violet-400 flex items-center justify-center text-xl font-bold">
+                                        <i class="fa-solid fa-atom"></i>
+                                    </div>
+                                    <span class="text-[10px] font-mono text-cyan-400 px-2.5 py-1 rounded bg-cyan-500/10 border border-cyan-500/20">
+                                        Qiskit VQC
+                                    </span>
+                                </div>
+                                <div class="code-block text-[11px] text-violet-300">
+                                    <code>qc = QuantumCircuit(4)<br>qc.h(range(4))<br>qc.append(IQPEncoding(features), [0,1,2,3])</code>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="px-3 py-1 rounded-full bg-violet-500/10 text-violet-400 border border-violet-500/20 text-xs font-mono font-bold">
+                                    Quantum ML
+                                </span>
+                                <a href="https://github.com/kedharkota" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white p-1" title="GitHub Profile">
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                                </a>
+                            </div>
+
+                            <h3 class="text-xl font-bold text-white group-hover:text-violet-400 transition-colors">
+                                Quantum Encoding for Medical Diagnostics
+                            </h3>
+
+                            <p class="text-slate-300 text-xs sm:text-sm mt-3 leading-relaxed">
+                                Evaluated 4 quantum encoding schemes (Amplitude, Angle, Basis, IQP) for diabetes classification using Variational Quantum Circuits (VQC) in Qiskit.
+                            </p>
+
+                            <div class="flex flex-wrap gap-2 mt-4 pt-3 border-t border-slate-800">
+                                <span class="px-2.5 py-0.5 rounded-lg bg-slate-900 text-[11px] font-mono text-slate-300 border border-slate-800">Python</span>
+                                <span class="px-2.5 py-0.5 rounded-lg bg-slate-900 text-[11px] font-mono text-slate-300 border border-slate-800">Qiskit</span>
+                                <span class="px-2.5 py-0.5 rounded-lg bg-slate-900 text-[11px] font-mono text-slate-300 border border-slate-800">VQC Circuits</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 flex gap-2">
+                            <button onclick="openProjectModal('quantum')" class="py-2.5 px-3 rounded-xl bg-slate-900 text-slate-300 text-xs font-bold border border-slate-800 hover:text-white">Details</button>
+                            <a href="https://github.com/kedharkota" target="_blank" rel="noopener noreferrer" class="flex-1 py-2.5 rounded-xl bg-violet-600 hover:bg-violet-500 text-white text-xs font-bold transition-all flex items-center justify-center gap-2">
+                                <i class="fa-brands fa-github text-sm"></i> Open GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Repo 5: Cross-Lingual Sentiment Analysis -->
+                    <div class="project-card glass-card rounded-3xl p-6 flex flex-col justify-between group border border-slate-800" data-category="ai">
+                        <div>
+                            <div class="p-5 rounded-2xl bg-slate-900/90 border border-emerald-500/20 mb-5 relative overflow-hidden space-y-3">
+                                <div class="flex items-center justify-between">
+                                    <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl font-bold">
+                                        <i class="fa-solid fa-language"></i>
+                                    </div>
+                                    <span class="text-[10px] font-mono text-emerald-400 px-2.5 py-1 rounded bg-emerald-500/10 border border-emerald-500/20">
+                                        Cross-Lingual NLP
+                                    </span>
+                                </div>
+                                <div class="code-block text-[11px] text-emerald-300">
+                                    <code>tokenizer = AutoTokenizer.from_pretrained('xlm-roberta')<br>sentiment = model(tokenizer(multilingual_text))</code>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-mono font-bold">
+                                    NLP & AI
+                                </span>
+                                <a href="https://github.com/kedharkota/cross-lingual-sentiment-analysis" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:text-white p-1" title="Open GitHub Repo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                                </a>
+                            </div>
+
+                            <h3 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">
+                                Cross-Lingual Sentiment Analysis
+                            </h3>
+
+                            <p class="text-slate-300 text-xs sm:text-sm mt-3 leading-relaxed">
+                                Natural Language Processing framework mapping sentiment representations across multiple languages without requiring translated target training datasets.
+                            </p>
+
+                            <div class="flex flex-wrap gap-2 mt-4 pt-3 border-t border-slate-800">
+                                <span class="px-2.5 py-0.5 rounded-lg bg-slate-900 text-[11px] font-mono text-slate-300 border border-slate-800">NLP</span>
+                                <span class="px-2.5 py-0.5 rounded-lg bg-slate-900 text-[11px] font-mono text-slate-300 border border-slate-800">Cross-Lingual</span>
+                                <span class="px-2.5 py-0.5 rounded-lg bg-slate-900 text-[11px] font-mono text-slate-300 border border-slate-800">Transformers</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 flex gap-2">
+                            <a href="https://github.com/kedharkota/cross-lingual-sentiment-analysis" target="_blank" rel="noopener noreferrer" class="flex-1 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-all flex items-center justify-center gap-2">
+                                <i class="fa-brands fa-github text-sm"></i> Open GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Repo 6: Advanced Data Structures Routing Trie -->
+                    <div class="project-card glass-card rounded-3xl p-6 flex flex-col justify-between group border border-slate-800" data-category="ai">
+                        <div>
+                            <div class="p-5 rounded-2xl bg-slate-900/90 border border-indigo-500/20 mb-5 relative overflow-hidden space-y-3">
+                                <div class="flex items-center justify-between">
+                                    <div class="w-10 h-10 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-xl font-bold">
+                                        <i class="fa-solid fa-network-wired"></i>
+                                    </div>
+                                    <span class="text-[10px] font-mono text-indigo-400 px-2.5 py-1 rounded bg-indigo-500/10 border border-indigo-500/20">
+                                        Prefix Trie Routing
+                                    </span>
+                                </div>
+                                <div class="code-block text-[11px] text-indigo-300">
+                                    <code>trie.insert_prefix("192.168.1.0/24", next_hop)<br>next_hop = trie.longest_prefix_match("192.168.1.45")</code>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 text-xs font-mono font-bold">
+                                    Algorithms & Networks
+                                </span>
+                                <a href="https://github.com/kedharkota/Advanced-Data-Structures-and-Algorithms" target="_blank" rel="noopener noreferrer" class="text-indigo-400 hover:text-white p-1" title="Open GitHub Repo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                                </a>
+                            </div>
+
+                            <h3 class="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors">
+                                Prefix Trie IP Packet Router
+                            </h3>
+
+                            <p class="text-slate-300 text-xs sm:text-sm mt-3 leading-relaxed">
+                                Implementation of prefix trie data structure for high-speed IP routing table lookup and dynamic longest prefix matching in network packet forwarding.
+                            </p>
+
+                            <div class="flex flex-wrap gap-2 mt-4 pt-3 border-t border-slate-800">
+                                <span class="px-2.5 py-0.5 rounded-lg bg-slate-900 text-[11px] font-mono text-slate-300 border border-slate-800">Python</span>
+                                <span class="px-2.5 py-0.5 rounded-lg bg-slate-900 text-[11px] font-mono text-slate-300 border border-slate-800">Prefix Trie</span>
+                                <span class="px-2.5 py-0.5 rounded-lg bg-slate-900 text-[11px] font-mono text-slate-300 border border-slate-800">Networking</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 flex gap-2">
+                            <a href="https://github.com/kedharkota/Advanced-Data-Structures-and-Algorithms" target="_blank" rel="noopener noreferrer" class="flex-1 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold transition-all flex items-center justify-center gap-2">
+                                <i class="fa-brands fa-github text-sm"></i> Open GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Repo 7: Time Skill Exchange Platform -->
+                    <div class="project-card glass-card rounded-3xl p-6 flex flex-col justify-between group border border-slate-800" data-category="iot">
+                        <div>
+                            <div class="p-5 rounded-2xl bg-slate-900/90 border border-cyan-500/20 mb-5 relative overflow-hidden space-y-3">
+                                <div class="flex items-center justify-between">
+                                    <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-xl font-bold">
+                                        <i class="fa-solid fa-people-arrows"></i>
+                                    </div>
+                                    <span class="text-[10px] font-mono text-cyan-400 px-2.5 py-1 rounded bg-cyan-500/10 border border-cyan-500/20">
+                                        HTML + SQL Platform
+                                    </span>
+                                </div>
+                                <div class="code-block text-[11px] text-cyan-300">
+                                    <code>SELECT * FROM skill_credits WHERE user_id = ?<br>UPDATE credits SET balance = balance + earned_time</code>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 text-xs font-mono font-bold">
+                                    Web & Database
+                                </span>
+                                <a href="https://github.com/kedharkota/-Time-skill-exchange-Platfrom-" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:text-white p-1" title="Open GitHub Repo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                                </a>
+                            </div>
+
+                            <h3 class="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+                                Time & Skill Exchange Platform
+                            </h3>
+
+                            <p class="text-slate-300 text-xs sm:text-sm mt-3 leading-relaxed">
+                                Web platform enabling peer-to-peer time banking and skill sharing with user authentication, SQL database queries, and credit transaction ledgers.
+                            </p>
+
+                            <div class="flex flex-wrap gap-2 mt-4 pt-3 border-t border-slate-800">
+                                <span class="px-2.5 py-0.5 rounded-lg bg-slate-900 text-[11px] font-mono text-slate-300 border border-slate-800">HTML/CSS</span>
+                                <span class="px-2.5 py-0.5 rounded-lg bg-slate-900 text-[11px] font-mono text-slate-300 border border-slate-800">SQL Database</span>
+                                <span class="px-2.5 py-0.5 rounded-lg bg-slate-900 text-[11px] font-mono text-slate-300 border border-slate-800">Time Bank</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 flex gap-2">
+                            <a href="https://github.com/kedharkota/-Time-skill-exchange-Platfrom-" target="_blank" rel="noopener noreferrer" class="flex-1 py-2.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 text-xs font-bold transition-all flex items-center justify-center gap-2">
+                                <i class="fa-brands fa-github text-sm"></i> Open GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Repo 8: Heart Murmur Detection -->
+                    <div class="project-card glass-card rounded-3xl p-6 flex flex-col justify-between group border border-slate-800" data-category="ai">
+                        <div>
+                            <div class="p-5 rounded-2xl bg-slate-900/90 border border-pink-500/20 mb-5 relative overflow-hidden space-y-3">
+                                <div class="flex items-center justify-between">
+                                    <div class="w-10 h-10 rounded-xl bg-pink-500/20 text-pink-400 flex items-center justify-center text-xl font-bold">
+                                        <i class="fa-solid fa-stethoscope"></i>
+                                    </div>
+                                    <span class="text-[10px] font-mono text-pink-400 px-2.5 py-1 rounded bg-pink-500/10 border border-pink-500/20">
+                                        Acoustic Signal Processing
+                                    </span>
+                                </div>
+                                <div class="code-block text-[11px] text-pink-300">
+                                    <code>spectrogram = librosa.feature.melspectrogram(audio_signal)<br>classification = model.predict(spectrogram)</code>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="px-3 py-1 rounded-full bg-pink-500/10 text-pink-400 border border-pink-500/20 text-xs font-mono font-bold">
+                                    Signal Processing & ML
+                                </span>
+                                <a href="https://github.com/kedharkota/-Heart-Murmur-" target="_blank" rel="noopener noreferrer" class="text-pink-400 hover:text-white p-1" title="Open GitHub Repo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                                </a>
+                            </div>
+
+                            <h3 class="text-xl font-bold text-white group-hover:text-pink-400 transition-colors">
+                                Heart Murmur Audio Signal Classification
+                            </h3>
+
+                            <p class="text-slate-300 text-xs sm:text-sm mt-3 leading-relaxed">
+                                Phonocardiogram (PCG) acoustic signal processing for detecting pathological heart murmurs using Librosa spectral feature extraction and ML classifiers.
+                            </p>
+
+                            <div class="flex flex-wrap gap-2 mt-4 pt-3 border-t border-slate-800">
+                                <span class="px-2.5 py-0.5 rounded-lg bg-slate-900 text-[11px] font-mono text-slate-300 border border-slate-800">Python</span>
+                                <span class="px-2.5 py-0.5 rounded-lg bg-slate-900 text-[11px] font-mono text-slate-300 border border-slate-800">Librosa</span>
+                                <span class="px-2.5 py-0.5 rounded-lg bg-slate-900 text-[11px] font-mono text-slate-300 border border-slate-800">Signal Processing</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 flex gap-2">
+                            <a href="https://github.com/kedharkota/-Heart-Murmur-" target="_blank" rel="noopener noreferrer" class="flex-1 py-2.5 rounded-xl bg-pink-600 hover:bg-pink-500 text-white text-xs font-bold transition-all flex items-center justify-center gap-2">
+                                <i class="fa-brands fa-github text-sm"></i> Open GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- View All Repositories on GitHub CTA -->
+                <div class="mt-12 text-center">
+                    <a href="https://github.com/kedharkota?tab=repositories" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-gradient-to-r from-violet-600 via-indigo-600 to-cyan-500 hover:from-violet-500 hover:to-cyan-400 text-slate-950 font-extrabold text-sm transition-all shadow-xl shadow-violet-500/25">
+                        <i class="fa-brands fa-github text-lg"></i>
+                        <span>Explore All Repositories on github.com/kedharkota</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- RESEARCH SECTION -->
+        <section id="research" class="py-28 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-10">
+                
+                <div class="text-center max-w-3xl mx-auto space-y-3">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-violet-500/10 border border-violet-500/30 text-violet-400 text-xs font-mono font-bold tracking-widest uppercase">
+                        <i class="fa-solid fa-scroll"></i> Peer-Reviewed IEEE Publications
+                    </div>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">IEEE Research & Publications</h2>
+                    <p class="text-slate-400 text-sm sm:text-base">Published research articles authored by Kota Kedharnadh indexed in IEEE Xplore.</p>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-8">
+                    
+                    <div class="glass-card p-8 rounded-3xl border border-violet-500/30 bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 relative overflow-hidden shadow-2xl flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between">
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-violet-500/10 text-violet-400 border border-violet-500/20 text-xs font-mono font-bold">
+                                    <i class="fa-solid fa-file-pdf"></i> IEEE Doc #11409195
+                                </span>
+                                <span class="text-xs font-mono text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded border border-emerald-500/20">
+                                    Published
+                                </span>
+                            </div>
+
+                            <h3 class="text-xl sm:text-2xl font-extrabold text-white leading-snug">
+                                IEEE Research Publication — IEEE Xplore 11409195
+                            </h3>
+
+                            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                                Peer-reviewed research focusing on Artificial Intelligence algorithm design, simulation metrics evaluation, and empirical performance analysis.
+                            </p>
+
+                            <div class="pt-2 text-xs font-mono text-slate-400 space-y-1">
+                                <p><strong class="text-white">Author:</strong> Kota Kedharnadh</p>
+                                <p><strong class="text-white">Indexing:</strong> IEEE Xplore Digital Library</p>
+                            </div>
+                        </div>
+
+                        <div class="pt-6 flex items-center gap-3">
+                            <a href="https://ieeexplore.ieee.org/document/11409195" target="_blank" rel="noopener noreferrer" class="flex-1 py-3 rounded-2xl bg-gradient-to-r from-violet-600 to-cyan-500 hover:from-violet-500 hover:to-cyan-400 text-slate-950 font-extrabold text-xs transition-all shadow-lg flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Open IEEE Doc 11409195
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-8 rounded-3xl border border-cyan-500/30 bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 relative overflow-hidden shadow-2xl flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between">
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 text-xs font-mono font-bold">
+                                    <i class="fa-solid fa-robot"></i> IEEE Doc #11089026
+                                </span>
+                                <span class="text-xs font-mono text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded border border-emerald-500/20">
+                                    Published
+                                </span>
+                            </div>
+
+                            <h3 class="text-xl sm:text-2xl font-extrabold text-white leading-snug">
+                                Implementation and Analysis of Advanced Navigation Algorithms for Robotic Vacuum Cleaners Using Webots Simulator
+                            </h3>
+
+                            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                                Published paper detailing simulation-based autonomous robotic navigation, sweep coverage efficiency optimization, and obstacle avoidance performance evaluation in the Webots simulator.
+                            </p>
+
+                            <div class="pt-2 text-xs font-mono text-slate-400 space-y-1">
+                                <p><strong class="text-white">Author:</strong> Kota Kedharnadh</p>
+                                <p><strong class="text-white">Indexing:</strong> IEEE Xplore Digital Library</p>
+                            </div>
+                        </div>
+
+                        <div class="pt-6 flex items-center gap-3">
+                            <a href="https://ieeexplore.ieee.org/document/11089026" target="_blank" rel="noopener noreferrer" class="flex-1 py-3 rounded-2xl bg-gradient-to-r from-cyan-500 to-emerald-400 hover:from-cyan-400 hover:to-emerald-300 text-slate-950 font-extrabold text-xs transition-all shadow-lg flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Open IEEE Doc 11089026
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION SECTION -->
+        <section id="education" class="py-28 relative bg-slate-950/70 border-t border-b border-slate-800/80">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-xs font-mono font-bold tracking-widest uppercase">
+                        <i class="fa-solid fa-graduation-cap"></i> Academic Record
+                    </div>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">Education & Background</h2>
+                </div>
+
+                <div class="max-w-4xl mx-auto relative border-l-2 border-slate-800 ml-4 sm:ml-32 space-y-12">
+                    
+                    <div class="relative pl-8 sm:pl-12 group">
+                        <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-violet-500 border-4 border-slate-950 group-hover:scale-125 transition-transform"></div>
+                        
+                        <div class="sm:absolute sm:-left-36 sm:top-1 text-xs font-mono text-violet-400 font-bold mb-2 sm:mb-0">
+                            2023 - PRESENT
+                        </div>
+
+                        <div class="glass-card p-6 sm:p-8 rounded-3xl space-y-3 border border-slate-800 hover:border-violet-500/40 transition-all">
+                            <div class="flex flex-wrap items-center justify-between gap-2">
+                                <h3 class="text-lg sm:text-xl font-bold text-white">B.Tech in Artificial Intelligence & Data Science</h3>
+                                <span class="px-3 py-1 rounded-full bg-violet-500/10 text-violet-400 font-mono text-xs font-bold border border-violet-500/20">
+                                    CGPA: 6.6
+                                </span>
+                            </div>
+                            <p class="text-sm font-semibold text-slate-300">Amrita Vishwa Vidyapeetham, Coimbatore Campus</p>
+                            <p class="text-xs text-slate-400 leading-relaxed">
+                                Coursework in Machine Learning, Deep Learning, Quantum Computing, Operating Systems, Data Structures & Algorithms, Computer Vision, and Microcontroller Systems.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="relative pl-8 sm:pl-12 group">
+                        <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-cyan-400 border-4 border-slate-950 group-hover:scale-125 transition-transform"></div>
+                        
+                        <div class="sm:absolute sm:-left-36 sm:top-1 text-xs font-mono text-cyan-400 font-bold mb-2 sm:mb-0">
+                            2021 - 2023
+                        </div>
+
+                        <div class="glass-card p-6 sm:p-8 rounded-3xl space-y-3 border border-slate-800 hover:border-cyan-500/40 transition-all">
+                            <div class="flex flex-wrap items-center justify-between gap-2">
+                                <h3 class="text-lg sm:text-xl font-bold text-white">Higher Secondary Education (MPC Stream)</h3>
+                                <span class="px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 font-mono text-xs font-bold border border-cyan-500/20">
+                                    Aggregate: 80%
+                                </span>
+                            </div>
+                            <p class="text-sm font-semibold text-slate-300">Bhashyam Educational Institution, Guntur</p>
+                            <p class="text-xs text-slate-400 leading-relaxed">
+                                Rigorous foundation in Mathematics, Physics, and Chemistry.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="relative pl-8 sm:pl-12 group">
+                        <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-emerald-400 border-4 border-slate-950 group-hover:scale-125 transition-transform"></div>
+                        
+                        <div class="sm:absolute sm:-left-36 sm:top-1 text-xs font-mono text-emerald-400 font-bold mb-2 sm:mb-0">
+                            2020 - 2021
+                        </div>
+
+                        <div class="glass-card p-6 sm:p-8 rounded-3xl space-y-3 border border-slate-800 hover:border-emerald-500/40 transition-all">
+                            <div class="flex flex-wrap items-center justify-between gap-2">
+                                <h3 class="text-lg sm:text-xl font-bold text-white">Secondary School Certificate (10th Standard)</h3>
+                                <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 font-mono text-xs font-bold border border-emerald-500/20">
+                                    Aggregate: 100%
+                                </span>
+                            </div>
+                            <p class="text-sm font-semibold text-slate-300">Bhashyam Educational Institution, Guntur</p>
+                            <p class="text-xs text-slate-400 leading-relaxed">
+                                Achieved top distinction with a 100% score.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="py-28 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid lg:grid-cols-12 gap-12">
+                    
+                    <div class="lg:col-span-5 space-y-6">
+                        <div>
+                            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-violet-500/10 border border-violet-500/30 text-violet-400 text-xs font-mono font-bold tracking-widest uppercase mb-3">
+                                <i class="fa-solid fa-paper-plane"></i> Direct Connection
+                            </div>
+                            <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Let's Connect & Collaborate</h2>
+                            <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                                Open for AI & Data Science engineering roles, research collaborations, hardware/robotics projects, and technical discussions.
+                            </p>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="p-4 rounded-2xl glass-card flex items-center justify-between border border-slate-800">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-11 h-11 rounded-2xl bg-violet-500/10 text-violet-400 flex items-center justify-center text-xl">
+                                        <i class="fa-brands fa-github"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-slate-400">GitHub Profile</p>
+                                        <a href="https://github.com/kedharkota" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-white hover:text-violet-400 transition-colors">https://github.com/kedharkota</a>
+                                    </div>
+                                </div>
+                                <a href="https://github.com/kedharkota" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-slate-900 text-slate-300 hover:text-white">
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                                </a>
+                            </div>
+
+                            <div class="p-4 rounded-2xl glass-card flex items-center justify-between border border-slate-800">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-11 h-11 rounded-2xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-slate-400">LinkedIn Network</p>
+                                        <a href="https://www.linkedin.com/in/kedharkota" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-white hover:text-cyan-400 transition-colors">https://www.linkedin.com/in/kedharkota</a>
+                                    </div>
+                                </div>
+                                <a href="https://www.linkedin.com/in/kedharkota" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-slate-900 text-slate-300 hover:text-cyan-400">
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                                </a>
+                            </div>
+
+                            <div class="p-4 rounded-2xl glass-card flex items-center justify-between border border-slate-800">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-11 h-11 rounded-2xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-slate-400">WhatsApp Direct</p>
+                                        <p class="text-sm font-bold text-white">+91 9030677603</p>
+                                    </div>
+                                </div>
+                                <a href="https://wa.me/919030677603?text=Hi%20Kedharnadh,%20I%20saw%20your%20portfolio!" target="_blank" class="px-3.5 py-2 rounded-xl bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-xs font-bold hover:bg-emerald-500 hover:text-slate-950 transition-all">
+                                    Chat
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-7">
+                        <form id="contact-form" onsubmit="handleContactSubmit(event)" class="glass-card p-6 sm:p-9 rounded-3xl border border-slate-800 space-y-5">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-xl font-bold text-white">Send Direct Message</h3>
+                                <span class="text-xs text-violet-400 font-mono"><i class="fa-solid fa-bolt"></i> Fast Response</span>
+                            </div>
+                            
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div class="space-y-1.5">
+                                    <label class="text-xs font-semibold text-slate-300">Your Name</label>
+                                    <input id="sender-name" type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-violet-500 transition-colors">
+                                </div>
+                                <div class="space-y-1.5">
+                                    <label class="text-xs font-semibold text-slate-300">Your Email</label>
+                                    <input id="sender-email" type="email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-violet-500 transition-colors">
+                                </div>
+                            </div>
+
+                            <div class="space-y-1.5">
+                                <label class="text-xs font-semibold text-slate-300">Subject</label>
+                                <input id="sender-subject" type="text" required placeholder="AI / Robotics Project Inquiry" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-violet-500 transition-colors">
+                            </div>
+
+                            <div class="space-y-1.5">
+                                <label class="text-xs font-semibold text-slate-300">Message</label>
+                                <textarea id="sender-message" rows="4" required placeholder="Hi Kedharnadh, I reviewed your AI & DS portfolio..." class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-violet-500 transition-colors custom-scrollbar"></textarea>
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-3 pt-2">
+                                <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-violet-600 via-indigo-600 to-cyan-500 hover:from-violet-500 hover:to-cyan-400 text-slate-950 font-extrabold text-sm tracking-wide transition-all shadow-lg shadow-violet-500/20 flex items-center justify-center gap-2">
+                                    <i class="fa-solid fa-paper-plane"></i> Send via Email
+                                </button>
+                                <button type="button" onclick="sendViaWhatsApp()" class="w-full py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm tracking-wide transition-all flex items-center justify-center gap-2">
+                                    <i class="fa-brands fa-whatsapp text-lg"></i> Send via WhatsApp
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="py-12 bg-slate-950 border-t border-slate-900 text-center text-xs text-slate-500 space-y-4">
+            <div class="flex items-center justify-center gap-4 text-slate-400">
+                <a href="https://github.com/kedharkota" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:text-white transition-all" title="GitHub">
+                    <i class="fa-brands fa-github text-base text-violet-400"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/kedharkota" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:text-cyan-400 transition-all" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin text-base text-cyan-400"></i>
+                </a>
+                <a href="mailto:kedharkota@gmail.com" class="p-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:text-violet-400 transition-all" title="Email">
+                    <i class="fa-solid fa-envelope text-base text-emerald-400"></i>
+                </a>
+                <a href="https://wa.me/919030677603" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:text-emerald-400 transition-all" title="WhatsApp">
+                    <i class="fa-brands fa-whatsapp text-base text-emerald-400"></i>
+                </a>
+            </div>
+
+            <p>© 2026 Kota Kedharnadh. All rights reserved.</p>
+            <p class="text-[11px] text-slate-600">B.Tech Artificial Intelligence & Data Science @ Amrita Vishwa Vidyapeetham</p>
+        </footer>
+
+    </div>
+
+
+    <!-- MODALS & TOAST NOTIFICATIONS -->
+    <div id="project-modal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md hidden flex items-center justify-center p-4">
+        <div class="glass-card max-w-2xl w-full rounded-3xl border border-slate-800 p-6 sm:p-8 space-y-5 relative max-h-[90vh] overflow-y-auto custom-scrollbar">
+            <button onclick="closeProjectModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white p-2">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+            <div id="modal-content" class="space-y-4"></div>
+        </div>
+    </div>
+
+    <div id="about-popup-modal" class="fixed inset-0 z-50 bg-slate-950/85 backdrop-blur-md hidden flex items-center justify-center p-4">
+        <div class="glass-card max-w-2xl w-full rounded-3xl border border-violet-500/40 p-6 sm:p-8 space-y-6 relative max-h-[90vh] overflow-y-auto custom-scrollbar shadow-2xl">
+            <button onclick="closeAboutModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white p-2.5 rounded-full bg-slate-900 border border-slate-800">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+
+            <div class="flex items-center gap-4 border-b border-slate-800 pb-5">
+                <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-violet-600 via-indigo-500 to-cyan-400 flex items-center justify-center text-slate-950 font-black text-xl shadow-lg shadow-violet-500/20">
+                    KK
+                </div>
+                <div>
+                    <h3 class="text-2xl font-extrabold text-white">Kota Kedharnadh</h3>
+                    <p class="text-xs font-mono text-cyan-400">Artificial Intelligence & Data Science Engineer</p>
+                    <p class="text-[11px] text-slate-400">Amrita Vishwa Vidyapeetham, Coimbatore</p>
+                </div>
+            </div>
+
+            <div class="space-y-3 text-sm text-slate-300 leading-relaxed">
+                <p>
+                    Welcome! I am an <strong class="text-white">Artificial Intelligence & Data Science (AI & DS)</strong> undergraduate scholar with a focus on machine learning systems, quantum algorithms, computer vision, and autonomous robotics.
+                </p>
+                <div class="p-4 rounded-2xl bg-slate-900/90 border border-slate-800 space-y-2 text-xs font-mono">
+                    <p class="text-violet-400 font-bold"><i class="fa-solid fa-scroll mr-1.5"></i> IEEE Publications:</p>
+                    <p>• <a href="https://ieeexplore.ieee.org/document/11409195" target="_blank" class="text-cyan-300 underline">IEEE Doc 11409195</a></p>
+                    <p>• <a href="https://ieeexplore.ieee.org/document/11089026" target="_blank" class="text-cyan-300 underline">IEEE Doc 11089026 (Webots Autonomous Navigation)</a></p>
+                </div>
+            </div>
+
+            <div class="space-y-2">
+                <p class="text-xs font-mono text-slate-400 font-bold uppercase tracking-wider">Explore Sections Directly:</p>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-xs font-mono">
+                    <button onclick="navigateToSection('#about')" class="p-3 rounded-xl bg-slate-900 hover:bg-violet-600 text-slate-300 hover:text-white border border-slate-800 text-left transition-all">
+                        <i class="fa-solid fa-user text-violet-400 mr-1.5"></i> 01. About Me
+                    </button>
+                    <button onclick="navigateToSection('#skills')" class="p-3 rounded-xl bg-slate-900 hover:bg-cyan-500 hover:text-slate-950 text-slate-300 text-left transition-all border border-slate-800">
+                        <i class="fa-solid fa-layer-group text-cyan-400 mr-1.5"></i> 02. Skills
+                    </button>
+                    <button onclick="navigateToSection('#projects')" class="p-3 rounded-xl bg-slate-900 hover:bg-emerald-500 hover:text-slate-950 text-slate-300 text-left transition-all border border-slate-800">
+                        <i class="fa-solid fa-diagram-project text-emerald-400 mr-1.5"></i> 03. Projects
+                    </button>
+                    <button onclick="navigateToSection('#research')" class="p-3 rounded-xl bg-slate-900 hover:bg-amber-500 hover:text-slate-950 text-slate-300 text-left transition-all border border-slate-800">
+                        <i class="fa-solid fa-scroll text-amber-400 mr-1.5"></i> 04. IEEE Research
+                    </button>
+                    <button onclick="navigateToSection('#education')" class="p-3 rounded-xl bg-slate-900 hover:bg-indigo-500 hover:text-white text-slate-300 text-left transition-all border border-slate-800">
+                        <i class="fa-solid fa-graduation-cap text-indigo-400 mr-1.5"></i> 05. Education
+                    </button>
+                    <button onclick="navigateToSection('#contact')" class="p-3 rounded-xl bg-slate-900 hover:bg-pink-500 hover:text-white text-slate-300 text-left transition-all border border-slate-800">
+                        <i class="fa-solid fa-paper-plane text-pink-400 mr-1.5"></i> 06. Contact
+                    </button>
+                </div>
+            </div>
+
+            <div class="pt-2 flex flex-wrap items-center justify-between gap-3 border-t border-slate-800">
+                <a href="https://github.com/kedharkota" target="_blank" class="px-4 py-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white text-xs font-mono font-bold flex items-center gap-2">
+                    <i class="fa-brands fa-github text-violet-400"></i> GitHub Profile
+                </a>
+                <button onclick="closeAboutModal()" class="px-5 py-2 rounded-xl bg-violet-600 hover:bg-violet-500 text-white font-bold text-xs">
+                    Close Pop-up
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 glass-card border border-violet-500/50 text-white px-5 py-3 rounded-2xl text-xs font-mono hidden items-center gap-3 shadow-2xl transition-all">
+        <i class="fa-solid fa-circle-check text-violet-400 text-base"></i>
+        <span id="toast-message">Notification message</span>
+    </div>
+
+    <script>
+        // Theme Switcher Handler
+        function setTheme(mode) {
+            document.documentElement.setAttribute('data-theme', mode);
+            showToast(`Theme switched to ${mode.toUpperCase()} mode!`);
+        }
+
+        // Portal Screen Transition Logic
+        function enterPortfolio() {
+            const intro = document.getElementById('intro-screen');
+            const main = document.getElementById('main-portfolio');
+            
+            intro.classList.add('opacity-0', 'pointer-events-none', 'transition-all', 'duration-500');
+            setTimeout(() => {
+                intro.classList.add('hidden');
+                main.classList.remove('hidden');
+                main.classList.add('fade-in');
+                window.scrollTo(0, 0);
+            }, 500);
+        }
+
+        function returnToIntro() {
+            const intro = document.getElementById('intro-screen');
+            const main = document.getElementById('main-portfolio');
+            
+            intro.classList.remove('hidden', 'opacity-0', 'pointer-events-none');
+            main.classList.add('hidden');
+            window.scrollTo(0, 0);
+        }
+
+        // Scroll Progress Handler
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('scroll-progress').style.width = scrolled + '%';
+        });
+
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            menu.classList.toggle('hidden');
+            if(menu.classList.contains('hidden')){
+                icon.className = 'fa-solid fa-bars-staggered text-xl';
+            } else {
+                icon.className = 'fa-solid fa-xmark text-xl';
+            }
+        }
+
+        // About Tab Switching
+        function switchAboutTab(tabKey) {
+            const tabs = ['overview', 'domains', 'research', 'personal'];
+            tabs.forEach(t => {
+                const contentEl = document.getElementById(`about-tab-${t}`);
+                const btnEl = document.getElementById(`tab-btn-${t}`);
+                if (t === tabKey) {
+                    contentEl.classList.remove('hidden');
+                    btnEl.className = 'about-tab-btn px-4 py-2 rounded-xl bg-violet-600 text-white font-bold transition-all';
+                } else {
+                    contentEl.classList.add('hidden');
+                    btnEl.className = 'about-tab-btn px-4 py-2 rounded-xl text-slate-400 hover:text-white transition-all';
+                }
+            });
+        }
+
+        // Toast Feedback
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toast-message');
+            toastMsg.innerText = msg;
+            toast.classList.remove('hidden');
+            toast.classList.add('flex');
+
+            setTimeout(() => {
+                toast.classList.add('hidden');
+                toast.classList.remove('flex');
+            }, 3000);
+        }
+
+        function copyToClipboard(text, successMsg = "Copied to clipboard!") {
+            const tempInput = document.createElement('textarea');
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            showToast(successMsg);
+        }
+
+        function copyContactSummary() {
+            const summary = "KOTA KEDHARNADH\nEmail: kedharkota@gmail.com\nPhone: +91-9030677603\nGitHub: https://github.com/kedharkota\nLinkedIn: https://www.linkedin.com/in/kedharkota\nB.Tech AI & DS @ Amrita Vishwa Vidyapeetham\nSpecializations: Quantum ML, Computer Vision, Autonomous Robotics, IoT Telemetry";
+            copyToClipboard(summary, "Kedharnadh profile summary copied!");
+        }
+
+        // Filter Projects
+        function filterProjects(category) {
+            const cards = document.querySelectorAll('.project-card');
+            const buttons = document.querySelectorAll('.project-filter-btn');
+
+            buttons.forEach(btn => {
+                if (btn.getAttribute('data-filter') === category) {
+                    btn.className = 'project-filter-btn px-4 py-2 rounded-xl bg-violet-600 text-white font-bold transition-all';
+                } else {
+                    btn.className = 'project-filter-btn px-4 py-2 rounded-xl text-slate-400 hover:text-white transition-all';
+                }
+            });
+
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Terminal Interactive Commands
+        function runTerminalCommand(cmd) {
+            const output = document.getElementById('terminal-output');
+            let resp = document.createElement('div');
+            resp.className = 'text-slate-300 pl-3 border-l-2 border-violet-500/50 space-y-1.5 my-2';
+
+            switch(cmd) {
+                case 'about':
+                    resp.innerHTML = `
+                        <p class="text-violet-400">$ cat about.md</p>
+                        <p>Kota Kedharnadh is an AI & DS undergraduate engineer at Amrita Vishwa Vidyapeetham, Coimbatore.</p>
+                        <p>Focuses on Quantum Machine Learning (Qiskit VQC), YOLO Computer Vision, Autonomous Robotics, and IoT sensor networks.</p>
+                    `;
+                    break;
+                case 'skills':
+                    resp.innerHTML = `
+                        <p class="text-cyan-400">$ cat skills.json</p>
+                        <p>• Languages: Python, C/C++, MATLAB</p>
+                        <p>• Quantum & ML: Qiskit (VQC), Scikit-Learn, XGBoost, RNN/LSTM</p>
+                        <p>• Vision & Hardware: YOLO, Webots, Raspberry Pi 4, ESP32, Arduino</p>
+                        <p>• Web Stack: Flask, React, Tailwind CSS</p>
+                    `;
+                    break;
+                case 'projects':
+                    resp.innerHTML = `
+                        <p class="text-emerald-400">$ ls projects/</p>
+                        <p>1. AI-deep-fake-detection/ (ResNet + LSTM)</p>
+                        <p>2. Gesture-Controlled-Drone-/ (OpenCV + MediaPipe)</p>
+                        <p>3. Healthcare-Recommendation-System/ (ML Disease Assistant)</p>
+                        <p>4. comparative_quantum_encoding_diagnostics/ (Qiskit VQC)</p>
+                        <p>5. cross-lingual-sentiment-analysis/ (Transformers NLP)</p>
+                        <p>6. Advanced-Data-Structures-and-Algorithms/ (Prefix Trie)</p>
+                        <p>7. -Time-skill-exchange-Platfrom-/ (HTML/SQL Platform)</p>
+                        <p>8. -Heart-Murmur-/ (Audio Signal Processing)</p>
+                    `;
+                    break;
+                case 'research':
+                    resp.innerHTML = `
+                        <p class="text-amber-400">$ cat ieee_papers.txt</p>
+                        <p>1. IEEE Doc 11409195 - Artificial Intelligence Performance Analysis</p>
+                        <p>2. IEEE Doc 11089026 - Webots Simulator Autonomous Navigation for Robotic Vacuum Cleaners</p>
+                    `;
+                    break;
+                case 'contact':
+                    resp.innerHTML = `
+                        <p class="text-pink-400">$ cat contact.txt</p>
+                        <p>• GitHub: https://github.com/kedharkota</p>
+                        <p>• LinkedIn: https://www.linkedin.com/in/kedharkota</p>
+                        <p>• Email: kedharkota@gmail.com</p>
+                        <p>• WhatsApp: +91 9030677603</p>
+                    `;
+                    break;
+                case 'clear':
+                    output.innerHTML = '';
+                    return;
+                default:
+                    resp.innerHTML = `<p class="text-red-400">Command not recognized. Use prompt buttons below.</p>`;
+            }
+
+            output.appendChild(resp);
+            const terminalBody = document.getElementById('terminal-body');
+            terminalBody.scrollTop = terminalBody.scrollHeight;
+        }
+
+        // Project Modals Data
+        const modalData = {
+            quantum: {
+                title: "Comparative Quantum Encoding for Medical Diagnostics",
+                tech: "Quantum ML • Python • Qiskit • VQC Circuits",
+                github: "https://github.com/kedharkota",
+                desc: "Evaluated variational quantum computing algorithms for medical classification using Qiskit. Benchmarked Amplitude, Angle, Basis, and IQP quantum encodings under different qubit noise conditions.",
+                highlights: [
+                    "Constructed Variational Quantum Circuits (VQC) in Qiskit.",
+                    "Benchmarked quantum models against SVM and XGBoost classical algorithms.",
+                    "Optimized quantum ansatz depth to mitigate gate noise in simulation."
+                ]
+            }
+        };
+
+        function openProjectModal(key) {
+            const data = modalData[key];
+            if (!data) return;
+
+            const modalContent = document.getElementById('modal-content');
+            
+            let highlightsHtml = '';
+            if (data.highlights && data.highlights.length > 0) {
+                highlightsHtml = `
+                    <div class="space-y-2 pt-2">
+                        <p class="text-xs font-mono text-violet-400 font-bold uppercase tracking-wider">Key Highlights & Architecture:</p>
+                        <ul class="space-y-2 text-xs text-slate-300 font-mono">
+                            ${data.highlights.map(h => `<li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i> <span>${h}</span></li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+            }
+
+            modalContent.innerHTML = `
+                <div class="space-y-4">
+                    <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
+                        <h3 class="text-xl sm:text-2xl font-bold text-white">${data.title}</h3>
+                        <span class="text-xs font-mono text-cyan-400 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20">${data.tech}</span>
+                    </div>
+
+                    <p class="text-sm text-slate-300 leading-relaxed">${data.desc}</p>
+
+                    ${highlightsHtml}
+
+                    <div class="pt-4 flex flex-wrap items-center justify-between gap-3 border-t border-slate-800">
+                        <a href="${data.github}" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-violet-600 hover:bg-violet-500 text-white font-bold text-xs transition-colors flex items-center gap-2">
+                            <i class="fa-brands fa-github text-sm"></i> View Source Code
+                        </a>
+                        <button onclick="closeProjectModal()" class="px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white text-xs font-bold transition-colors">
+                            Close Window
+                        </button>
+                    </div>
+                </div>
+            `;
+
+            document.getElementById('project-modal').classList.remove('hidden');
+        }
+
+        function openAboutModal() {
+            document.getElementById('about-popup-modal').classList.remove('hidden');
+        }
+
+        function closeAboutModal() {
+            document.getElementById('about-popup-modal').classList.add('hidden');
+        }
+
+        function navigateToSection(targetId) {
+            closeAboutModal();
+            const el = document.querySelector(targetId);
+            if(el) {
+                el.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        function closeProjectModal() {
+            document.getElementById('project-modal').classList.add('hidden');
+        }
+
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('sender-name').value;
+            const email = document.getElementById('sender-email').value;
+            const subject = document.getElementById('sender-subject').value;
+            const message = document.getElementById('sender-message').value;
+
+            const mailtoBody = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+            const mailtoSubject = encodeURIComponent(`Portfolio Inquiry: ${subject}`);
+            
+            window.location.href = `mailto:kedharkota@gmail.com?subject=${mailtoSubject}&body=${mailtoBody}`;
+            showToast("Opening default email app...");
+            document.getElementById('contact-form').reset();
+        }
+
+        function sendViaWhatsApp() {
+            const name = document.getElementById('sender-name').value || 'Visitor';
+            const email = document.getElementById('sender-email').value || 'Not provided';
+            const subject = document.getElementById('sender-subject').value || 'Inquiry';
+            const message = document.getElementById('sender-message').value || 'Hello Kedharnadh!';
+
+            const waText = encodeURIComponent(`Hi Kedharnadh,\nMy Name: ${name}\nEmail: ${email}\nSubject: ${subject}\n\nMessage: ${message}`);
+            window.open(`https://wa.me/919030677603?text=${waText}`, '_blank');
+            showToast("Opening WhatsApp chat...");
+        }
+    </script>
+</body>
+</html>
