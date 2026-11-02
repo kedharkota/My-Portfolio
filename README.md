@@ -1,100 +1,64 @@
-# Kota Kedharnadh · Developer Portfolio
+# Kota Kedharnadh · Interactive Portfolio
 
-An interactive portfolio for AI, data science, and robotics projects.
+AI, data science, quantum machine learning, and robotics — presented through an interactive, responsive portfolio.
 
-**HTML · CSS · JavaScript · Tailwind CSS**
+**HTML · CSS · JavaScript · Canvas 2D with 3D projection**
+
+[Open the live portfolio](https://kedharkota.github.io/My-Portfolio/) · [Projects](https://kedharkota.github.io/My-Portfolio/#projects) · [Research](https://kedharkota.github.io/My-Portfolio/#research)
 
 [![Documentation checks](https://github.com/kedharkota/My-Portfolio/actions/workflows/docs.yml/badge.svg?branch=main)](https://github.com/kedharkota/My-Portfolio/actions/workflows/docs.yml)
 
-[Overview](#overview) · [Getting started](#getting-started) · [Repository guide](#repository-guide) · [Reproducibility](docs/REPRODUCIBILITY.md)
+![Redesigned portfolio rendered in a desktop browser](portfolio-preview.jpg)
 
-<p align="center">
-  <img src="docs/assets/preview.png" alt="Kota Kedharnadh · Developer Portfolio: project preview" width="900" />
-</p>
+## The experience
 
-[Open full-size visual](docs/assets/preview.png)
+- An interactive particle sphere and inclined orbital rings, projected in three dimensions and responsive to pointer movement.
+- Floating icons, subtle project-card tilt, scroll reveals, and a reading progress indicator.
+- Light/dark mode, Lime/Violet/Ice accents, and an ambient-motion toggle. Preferences persist on the visitor's device.
+- Eight existing project entries with category filters, desktop grid/list views, and keyboard-accessible project dialogs.
+- Profile tabs, a multidisciplinary skills section, IEEE publication links, and an education timeline.
+- Responsive mobile navigation, keyboard focus states, and reduced-motion support.
+- Email and WhatsApp contact actions that prepare a message in the visitor's chosen app.
 
-*Portfolio main view rendered from the repository HTML.*
+## Run locally
 
-## Project at a glance
-
-| Detail | Project information |
-| --- | --- |
-| **Focus** | Interactive project and research portfolio |
-| **Start here** | [index.html](index.html) |
-| **Run mode** | Static web page; Python HTTP server for local preview |
-| **Explore** | Project cards, research links, theme controls, and contact links |
-
-## Overview
-
-A single-page personal portfolio that brings project work, research links, education, and contact options into one browsable interface. The page includes a gateway screen, theme controls, a developer-console interaction, and project detail modals.
-
-## What this project includes
-
-- Gateway and main portfolio views with section navigation.
-- Three visual themes: Violet, Cyber, and Indigo.
-- Project cards, research links, education timeline, and a command-style profile panel.
-- Contact form that opens the visitor's email client, plus GitHub and LinkedIn links.
-
-## Workflow
-
-<p align="center">
-  <img src="docs/assets/overview.svg" alt="Project workflow" width="900" />
-</p>
-
-[Open full-size visual](docs/assets/overview.svg)
-
-*Explanatory diagram. Detailed implementation and availability notes follow below.*
-
-## Getting started
-
-Requires Python 3 for the preview server and a modern browser. No Node.js build is required.
+No package installation or build step is required. Serve the repository with Python 3:
 
 ```bash
 python -m http.server 8000
 ```
 
-Open http://localhost:8000 and select **Enter Full Portfolio**. Internet access loads the Tailwind CDN, fonts, and icon stylesheet.
-
-### Required inputs and current constraints
-
-All page content lives in `index.html`. Before hosting, replace the machine-specific `file:///C:/...` background-image references with committed assets and relative URLs. Those background files are absent from this repository.
+Open http://localhost:8000. The page loads directly into the portfolio. Google Fonts is optional; local font fallbacks are provided. The page has no runtime JavaScript framework or external icon dependency.
 
 ## Repository guide
 
 | File | Purpose |
 | --- | --- |
-| [index.html](index.html) | Complete page, styles, interactions, and project content. |
+| [index.html](index.html) | Complete page, embedded styles, JavaScript, and original portfolio content. |
+| [portfolio-preview.jpg](portfolio-preview.jpg) | Browser screenshot of the redesigned desktop experience. |
+| [docs/REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md) | Verification scope and visual provenance. |
+| [tools/check_docs.py](tools/check_docs.py) | Local documentation link and image-header checker. |
 
-## Results and project status
+## Content and verification
 
-The screenshot above was captured from the committed HTML served over HTTP. The contact form uses `mailto:` rather than a server-side message service. Research and achievement statements on the page are author-provided portfolio content; this documentation does not independently verify those claims.
+The redesign preserves the author's existing profile information, eight project entries, education records, research links, grades, and contact details. Research and achievement statements are author-provided; the visual redesign does not independently verify them.
 
-## Next steps
+Desktop and phone layouts were inspected in a browser. Theme/accent persistence, the motion toggle, project filters, grid/list views, project dialogs, profile tabs, and mobile navigation were exercised. The orbital scene is a generative illustration, and project diagrams are concept visuals rather than screenshots or measured experiment results.
 
-- Commit the referenced background images or remove their local file paths.
-- Check navigation, project links, and contact actions on mobile before deployment.
+The contact form does not use a server or store submissions. Email opens the visitor's email client; WhatsApp opens a prepared chat. The visitor completes sending in that app.
 
-## Documentation maintenance
-
-<details>
-<summary>Run documentation checks and maintain visuals</summary>
-
-Local documentation links and image headers are checked on pull requests and relevant pushes by the [documentation workflow](.github/workflows/docs.yml). Run the same check locally:
+## Documentation checks
 
 ```bash
 python tools/check_docs.py
 ```
 
-See the [reproducibility guide](docs/REPRODUCIBILITY.md) for evidence, missing artifacts, and visual-source notes. The check validates documentation files; it does not train models or certify application behavior.
+The checker validates local documentation links and image headers. It does not assess the underlying project models or certify research outcomes.
 
-</details>
+## Explore more work
 
-## Explore related projects
-
+- [All repositories](https://github.com/kedharkota?tab=repositories)
 - [Video Deepfake Detection](https://github.com/kedharkota/AI-deep-fake-detection)
 - [Gesture-Controlled Drone Simulation](https://github.com/kedharkota/Gesture-Controlled-Drone-)
 
----
-
-[More projects by kedharkota](https://github.com/kedharkota?tab=repositories)
+[GitHub](https://github.com/kedharkota) · [LinkedIn](https://www.linkedin.com/in/kedharkota)
