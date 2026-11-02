@@ -4,11 +4,26 @@ An interactive portfolio for AI, data science, and robotics projects.
 
 **HTML · CSS · JavaScript · Tailwind CSS**
 
+[![Documentation checks](https://github.com/kedharkota/My-Portfolio/actions/workflows/docs.yml/badge.svg?branch=main)](https://github.com/kedharkota/My-Portfolio/actions/workflows/docs.yml)
+
 [Overview](#overview) · [Getting started](#getting-started) · [Repository guide](#repository-guide) · [Reproducibility](docs/REPRODUCIBILITY.md)
 
-![Kota Kedharnadh · Developer Portfolio: project preview](docs/assets/preview.png)
+<p align="center">
+  <img src="docs/assets/preview.png" alt="Kota Kedharnadh · Developer Portfolio: project preview" width="900" />
+</p>
+
+[Open full-size visual](docs/assets/preview.png)
 
 *Portfolio main view rendered from the repository HTML.*
+
+## Project at a glance
+
+| Detail | Project information |
+| --- | --- |
+| **Focus** | Interactive project and research portfolio |
+| **Start here** | [index.html](index.html) |
+| **Run mode** | Static web page; Python HTTP server for local preview |
+| **Explore** | Project cards, research links, theme controls, and contact links |
 
 ## Overview
 
@@ -23,7 +38,11 @@ A single-page personal portfolio that brings project work, research links, educa
 
 ## Workflow
 
-![Project workflow](docs/assets/overview.svg)
+<p align="center">
+  <img src="docs/assets/overview.svg" alt="Project workflow" width="900" />
+</p>
+
+[Open full-size visual](docs/assets/overview.svg)
 
 *Explanatory diagram. Detailed implementation and availability notes follow below.*
 
@@ -49,7 +68,7 @@ All page content lives in `index.html`. Before hosting, replace the machine-spec
 
 ## Results and project status
 
-The screenshot below was captured from the committed HTML served over HTTP. The contact form uses `mailto:` rather than a server-side message service. Research and achievement statements on the page are author-provided portfolio content; this documentation does not independently verify those claims.
+The screenshot above was captured from the committed HTML served over HTTP. The contact form uses `mailto:` rather than a server-side message service. Research and achievement statements on the page are author-provided portfolio content; this documentation does not independently verify those claims.
 
 ## Next steps
 
@@ -58,6 +77,9 @@ The screenshot below was captured from the committed HTML served over HTTP. The 
 
 ## Documentation maintenance
 
+<details>
+<summary>Run documentation checks and maintain visuals</summary>
+
 Local documentation links and image headers are checked on pull requests and relevant pushes by the [documentation workflow](.github/workflows/docs.yml). Run the same check locally:
 
 ```bash
@@ -65,6 +87,13 @@ python tools/check_docs.py
 ```
 
 See the [reproducibility guide](docs/REPRODUCIBILITY.md) for evidence, missing artifacts, and visual-source notes. The check validates documentation files; it does not train models or certify application behavior.
+
+</details>
+
+## Explore related projects
+
+- [Video Deepfake Detection](https://github.com/kedharkota/AI-deep-fake-detection)
+- [Gesture-Controlled Drone Simulation](https://github.com/kedharkota/Gesture-Controlled-Drone-)
 
 ---
 
